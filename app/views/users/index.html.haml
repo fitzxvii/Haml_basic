@@ -1,0 +1,29 @@
+%h1 List of Users
+%ul
+    - @users.each do |user, age|
+        %li= user
+
+%p 
+    %span{:style => "color: red;"}Pie bear claw wafer 
+    applicake cupcake cotton candy donut. Tootsie roll cake chupa chups pie late cake. 
+    %b Caramels candy canes 
+    underwear.com marshmallow. Apple pie marzipan cake wafer pastry. Ice cream candy canes cotton candy. 
+    %a{ :href => "#" } Gummies
+    cheesecake muffin. cake marzipan sweet toll. Gummies sesame snaps brownie muffin lollipop macaroon cookie pie jelly-o.
+
+%p 
+    %a{ :href => "#" } Tom
+    is 42 years old. Bob is 31 years old and Sam is 13 years old. 
+
+%p 
+    Tony is  
+    %a{ :href => "#" } 18 years old.   
+    Ella is 22 years old and Bill is 22 years old.
+
+%h1 Below are Tom's Friends:
+%ol 
+    - @users.each do |user, age|
+        %li= user 
+        %ul
+            %li= age 
+
